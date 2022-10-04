@@ -7,11 +7,15 @@
     "email": "andrea@andreamontanaro.it"
   },
   "scripts": {
+    "prestart": "eslint .",
     "start": "ts-node ./src/startup.ts",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@types/node": "^18.8.1",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",

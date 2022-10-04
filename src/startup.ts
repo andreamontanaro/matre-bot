@@ -12,4 +12,4 @@ const client = new Client({
 onReady(client);
 onInteractionCreate(client);
 
-client.login(process.env.TOKEN!);
+client.login(process.env.TOKEN || '');
