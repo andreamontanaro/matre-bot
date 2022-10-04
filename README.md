@@ -4,7 +4,7 @@ This is a simple NodeJS program created to learn how Discord bot development wor
 
 ## Built in Types!
 
-This project and the Discord.js library is written in TypeScript so all commands and Discord's API have strong typization for a better programming and refactoring experience.
+This project and the Discord.js library are written in TypeScript so all commands and Discord's API have strong typization for a better programming and refactoring experience.
 
 ## Contact me
 
