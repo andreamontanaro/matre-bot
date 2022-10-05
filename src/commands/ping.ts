@@ -5,7 +5,7 @@ export const Ping: Command = {
   name: 'ping',
   description: 'Verify if bot is running and works.',
   type: ApplicationCommandType.ChatInput,
-  run: async (client, interaction) => {
+  run: async (_, interaction) => {
     await interaction.followUp({
       ephemeral: true,
       content: 'Bip bup.',

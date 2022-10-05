@@ -1,15 +1,13 @@
 import { Client } from 'discord.js';
 import dotenv from 'dotenv';
-import onInteractionCreate from './listeners/onInteractionCreate';
-import onReady from './listeners/onReady';
+import configureListeners from './listeners/configureListeners';
 
 dotenv.config();
 
 const client = new Client({
-  intents: [],
+  intents: ['Guilds', 'DirectMessages', 'GuildMessages'],
 });
 
-onReady(client);
-onInteractionCreate(client);
+configureListeners(client);
 
 client.login(process.env.TOKEN || '');
